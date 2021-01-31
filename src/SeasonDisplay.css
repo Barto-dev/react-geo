@@ -1,0 +1,55 @@
+.icon-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.icon-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.season-display {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.season-display h1 {
+    font-size: clamp(15px, 5vw, 70px);
+}
+
+.season-display.winter .icon {
+    color: skyblue;
+}
+
+.season-display.winter {
+    background-image: linear-gradient(#d7ddea, aliceblue);
+}
+
+.season-display.summer {
+    background-image: linear-gradient(rgba(255,205,42,0.5), rgba(255,205,42,0.2));
+}
+
+.season-display.summer .icon {
+    color: gold;
+}
+
+.location-error {
+    font-size: clamp(15px, 5vw, 70px);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color:#262626;
+    color: #ffffff;
+}
+
+.location-error .location-error__text {
+    margin-top: 35px;
+}
